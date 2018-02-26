@@ -1,4 +1,6 @@
-status --is-interactive; and source (rbenv init -|psub)
+if type -q rbenv
+  status --is-interactive; and source (rbenv init -|psub)
+end
 
 export pp=/Users/$USER/PycharmProjects/
 export work=/Users/$USER/work/
